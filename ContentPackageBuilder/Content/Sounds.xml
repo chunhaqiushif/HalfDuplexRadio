@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+  <halfduplexpttbegin file="%ModDir%/Content/Sound/radio-ptt-begin.ogg" volume="1" range="1000" />
+  <halfduplexppttbusy file="%ModDir%/Content/Sound/radio-ppt-busy.ogg" volume="1" range="1000" />
+  <halfduplexlistenbegin file="%ModDir%/Content/Sound/radio-listen-begin.ogg" volume="1" range="1000" />
+  <halfduplexlistenover file="%ModDir%/Content/Sound/radio-listen-over.ogg" volume="1" range="1000" />
+</sounds>

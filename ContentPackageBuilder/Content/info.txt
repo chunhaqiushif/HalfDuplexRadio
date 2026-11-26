@@ -1,0 +1,36 @@
+半双工无线电语音（C#）
+
+由AI辅助开发，个人负责编辑、审阅与调试，介意请勿使用
+目前的代码与内容已经按照官方插件系统（IBarotraumaPlugin）重新组织，不再依赖 Lua For Barotrauma，直接由游戏原生插件加载器载入编译好的 .dll
+(1.15.33或更高的游戏版本)
+
+须知：Mod中使用".dll"是存在风险的，这一点在游戏界面中也会提醒
+外部审阅代码可以访问Github：https://github.com/chunhaqiushif/HalfDuplexRadio
+游戏内审阅请在提示的位置展开Mod并点击反编译选项来查看代码
+
+MOD修改了“语音激活”、“按键通话”的机制：
+不使用无线电时，默认以本地语音进行通话
+
+非16频道：
+同一无线电频道同一时刻只允许一个人说话
+别人正在这个频道说话时，你按住无线电键发出的语音会提示占线
+
+16频道：
+频道会对所有人转发，并且无视占线情况，用于紧急无线电通话
+
+只有无线电语音会遵循这个规则，文字聊天不受影响
+
+为什么是16频道：
+“16频道”通常指国际海事甚高频（Marine VHF）无线电的 16 频道（156.800 MHz），是全球通用的遇险、紧急、安全与呼叫频道
+这里借用了这个概念
+
+----------------------------------------------
+
+HalfDuplexRadio (C#)
+
+Developed with AI assistance; editing, review and debugging are handled by me. Please do not use this mod if that bothers you.
+The code and content have been reorganized around the official plugin system (IBarotraumaPlugin). It no longer depends on Lua For Barotrauma; the compiled ".dll" is loaded directly by the game's native plugin loader.
+
+Please note: using .dll files in a mod carries risks, and the game warns about this in its own UI.
+To review the code externally, visit GitHub: https://github.com/chunhaqiushif/ProtagonistNeverDie
+To review it in-game, expand the mod at the prompt and click the decompile option to view the code.

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<ContentPackage name="%ModName%">
+<ContentPackage name="%ModName%" modversion="1.2.1">
   <PluginInfo file="%ModDir%/PluginInfo.xml" />
+  <Sounds file="%ModDir%/Content/Sounds.xml" />
 </ContentPackage>
