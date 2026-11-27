@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <halfduplex.emergency.description>Emergency channel.\nEveryone on the radio hears you, regardless of channel or busy state.\nUse it for emergencies or as a command channel.</halfduplex.emergency.description>
+  <halfduplex.emergency.awaiting>Press a key...</halfduplex.emergency.awaiting>
+</infotexts>
