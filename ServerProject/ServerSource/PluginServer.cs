@@ -42,7 +42,8 @@ public partial class Plugin
         => PluginCore.TryArbitrate(inc, connectedClient);
 
     /// <summary>紧急发言者的语音绕过原版的频道与队伍判定，其余限制保留。</summary>
-    private static bool CanReceivePrefix(Client? sender, Client? recipient, ref float distanceFactor, ref bool isRadio)
+    private static bool CanReceivePrefix(Client? sender, Client? recipient,
+        ref float distanceFactor, ref bool isRadio, ref bool __result)
     {
         if (sender == null || recipient == null) return true;
 
@@ -51,6 +52,9 @@ public partial class Plugin
 
         distanceFactor = factor;
         isRadio = radio;
-        return decision.Value;
+        __result = decision.Value;
+
+        // 前缀返回 false 表示跳过原方法，结果已由 __result 给出
+        return false;
     }
 }
